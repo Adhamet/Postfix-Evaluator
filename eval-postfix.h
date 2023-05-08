@@ -10,8 +10,8 @@ struct Node{
 	Node* next;
 };
 
-Node *top = NULL;
-Node *temp;
+extern Node *top;
+extern Node *temp;
 
 // Stack Functions
 void push(int val);

@@ -2,11 +2,14 @@
 #include "eval-postfix.h"
 using namespace std;
 
+Node *top = NULL;
+Node *temp;
+
 int main()
 {
-	string infix, postfix;
+	string postfix;
 
-	cout << "Enter an postfix expression: ";
+	cout << "Enter n postfix expression: ";
 	getline(cin, postfix);
 	evaluatePostfix(postfix);
 
